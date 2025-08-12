@@ -1,9 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Brindemos Vajillas</title>
+    <title>Portafolio - Brindemos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Menú de navegación -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#inicio"> Brindemos Vajilla </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catalogo">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- INICIO -->
+      <section
+        id="inicio"
+        class="seccion-inicio d-flex align-items-center justify-content-center text-center seccion-scroll"
+      >
+        <div class="container">
+          <img src="./imgs/logo.jpg" alt="Logo" class="logo-inicio mb-4" />
+          <p class="lead mb-4">
+            Somos Brindemos Vajilla, y este es nuestro espacio profesional.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="py-5 bg-light seccion-scroll">
+        <div class="container">
+          <h2 class="text-center mb-4">Servicios</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Alquiler de Vajilla</h5>
+                  <p class="card-text">
+                    Ofrecemos alquiler de vajilla completa para todo tipo de
+                    eventos: platos, copas, vasos, cubiertos y más. Todo en
+                    excelente estado y listo para usar.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Alquiler de Mesas y Sillas</h5>
+                  <p class="card-text">
+                    Contamos con mesas y sillas de diferentes estilos y tamaños
+                    para que tus invitados estén cómodos y tu evento luzca
+                    profesional.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Alquiler de Mantelería y Accesorios
+                  </h5>
+                  <p class="card-text">
+                    Disponemos de manteles, servilletas, caminos de mesa y otros
+                    accesorios para vestir tus mesas y sillas dándoles un toque
+                    especial.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIÉNES SOMOS -->
+      <section id="quienes-somos" class="py-5 seccion-scroll">
+        <div class="container">
+          <h2 class="text-center mb-4 text-white">Quiénes somos</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <article>
+                <p class="text-white">
+                  <strong>Brindemos Vajilla</strong> es un emprendimiento
+                  familiar dedicado al alquiler de vajilla, mesas, sillas,
+                  mantelería y accesorios para todo tipo de eventos sociales y
+                  empresariales. Nos especializamos en brindar soluciones
+                  integrales para que tu celebración cuente con todos los
+                  detalles necesarios y luzca impecable.
+                </p>
+                <p class="text-white">
+                  Nuestro compromiso es ofrecer productos de primera calidad en
+                  excelente estado y listos para usar, adaptándonos a las
+                  necesidades de cada cliente. Trabajamos con responsabilidad,
+                  puntualidad y atención personalizada para que tu evento sea un
+                  éxito y sólo te preocupes por disfrutar.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATÁLOGO -->
+      <section id="catalogo" class="py-5 bg-light seccion-scroll">
+        <div class="container">
+          <h2 class="text-center mb-4">Catálogo</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <img
+                  src="./imgs/vajilla.jpeg"
+                  class="card-img-top"
+                  alt="Vajilla"
+                  height="50%"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vajilla</h5>
+                  <p class="card-text">
+                    Aquí podrás observar nuestros platos, vasos, copas,
+                    fraperas, paneras, cubiertería, ensaladeras y más...
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <img
+                  src="./imgs/manteleria.jpeg"
+                  class="card-img-top"
+                  alt="Mantelería"
+                  height="50%"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mantelería</h5>
+                  <p class="card-text">
+                    Aquí podrás observar la gama de colores con las que
+                    trabajamos para manteles, servilletas, fundas para sillas,
+                    lazos.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100 shadow-sm">
+                <img
+                  src="./imgs/otros.jpeg"
+                  class="card-img-top"
+                  alt="Más Productos"
+                  height="50%"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Más Productos</h5>
+                  <p class="card-text">
+                    Aquí podrás apreciar los productos complementarios que
+                    puedes necesitar para tu evento, por ejemplo, Hornos
+                    pizzeros, mesas redondas, rectangulares o cuadradas, sillas
+                    de caño, sillas tapizadas y más.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="py-5 seccion-scroll">
+        <div class="container">
+          <h2 class="text-center mb-4 text-white">Contacto</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="bg-dark text-white rounded-4 p-4 shadow-sm">
+                <ul class="list-unstyled fs-5 mb-0">
+                  <li class="mb-3">
+                    <strong>WhatsApp:</strong>
+                    <a
+                      href="https://wa.me/5491149739055"
+                      class="text-info text-decoration-none"
+                      target="_blank"
+                    >
+                      +54 9 11 4973-9055
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <strong>Correo electrónico:</strong>
+                    <a
+                      href="mailto:info@brindemos-vajilla.com.ar"
+                      class="text-info text-decoration-none"
+                    >
+                      info@brindemos-vajilla.com.ar
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <strong>Facebook:</strong>
+                    <a
+                      href="https://facebook.com/tuempresa"
+                      class="text-info text-decoration-none"
+                      target="_blank"
+                    >
+                      facebook.com/brindemos vajilla
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Instagram:</strong>
+                    <a
+                      href="https://instagram.com/tuempresa"
+                      class="text-info text-decoration-none"
+                      target="_blank"
+                    >
+                      @brindemos_vajilla
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <small
+          >&copy; 2025 Santangelo Vicente. Todos los derechos reservados.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+body {
+    background: #181818;
+    color: #222;
+}
+.navbar, footer {
+    background: #181818 !important;
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ff9800 !important;
+    font-weight: 600;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #00bcd4 !important;
+}
+.logo-inicio {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    background: #fff;
+}
+.seccion-inicio {
+    min-height: 60vh;
+    background: linear-gradient(135deg, #181818 60%, #ff9800 100%);
+    color: #fff;
+}
+.card-title {
+    color: #ff9800;
+}
+.btn-primary {
+    background: #ff9800;
+    border: none;
+}
+.btn-primary:hover {
+    background: #00bcd4;
+}
+footer {
+    color: #fff;
+    background: #181818;
+}
+@media (max-width: 767px) {
+    .logo-inicio { width: 80px; }
+    .seccion-inicio { min-height: 40vh; }
+}
+.seccion-inicio {
+    min-height: 60vh;
+    background: linear-gradient(135deg, #181818 60%, #ff9800 100%);
+    color: #fff;
+    padding-top: 100px; /* Compensa el menú fijo */
+}
+.seccion-scroll {
+    scroll-margin-top: 35px; /* Altura del menú fijo */
+}
